@@ -1,0 +1,8 @@
+NET "clk" LOC = K15;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_CLK_66MHZ = PERIOD "clk" 15000 ps INPUT_JITTER 1000 ps;
+NET "led[2]" LOC = F5;
+NET "reset" LOC = V4;
+CONFIG VCCAUX  = 3.3;
+NET "pwm_out" KEEP = "TRUE";
